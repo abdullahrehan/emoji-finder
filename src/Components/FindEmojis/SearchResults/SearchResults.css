@@ -1,0 +1,58 @@
+.emojis-result-div {
+    width: 90%;
+    height: 69%;
+}
+
+.recent-emojis-title {
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    width: 95%;
+
+}
+
+.clear-recent-emojis-div {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.clear-recent-emojis-div:hover {
+    text-decoration: underline;
+    color: tomato;
+    cursor: pointer;
+}
+
+.recent-emojis-div {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.emojis-title-div {
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #c0c0c0;
+    font-size: .9rem;
+}
+
+
+.emojifinder-results-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+    min-height: 18%;
+    max-height: 69%;
+    min-width: 76%;
+    max-width: 100%;
+    padding: 0px;
+    padding-bottom: 3px;
+}

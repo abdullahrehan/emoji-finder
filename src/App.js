@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import Input from './Components/InputField/Input'
+import Signatures from './Images/signatures.png'
+import { useTypewriter } from 'react-simple-typewriter'
 import './App.css';
 
 function App() {
+
+  const [text] = useTypewriter({
+  
+    words: ["😁", '😂', '😇', '😠'],
+    loop: 3,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+  
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className='react-emoji-keyboard'>React Emoji Keyboard</div>
+      
+      <div className='typewriter-div'> Use your Favourite Emojis  {text}</div>
+      
+      <Input className='input-div' />
+      
+      <div className='signature-div'>
+
+        <img src={Signatures} className='signature-image' />
+      
+      </div>
+
     </div>
   );
 }
